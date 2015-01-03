@@ -104,25 +104,25 @@ $(CURDIR)/libs/pylint:
 libs: $(CURDIR)/libs/astroid $(CURDIR)/libs/logilab-common $(CURDIR)/libs/pylint
 	@rm -rf $(CURDIR)/pylama_pylint/astroid $(CURDIR)/pylama_pylint/pylint $(CURDIR)/pylama_pylint/logilab
 	@mkdir -p $(CURDIR)/pylama_pylint/astroid
-	@cp -f $(CURDIR)/libs/astroid/__init__.py $(CURDIR)/pylama_pylint/astroid/.
-	@cp -f $(CURDIR)/libs/astroid/__pkginfo__.py $(CURDIR)/pylama_pylint/astroid/.
-	@cp -f $(CURDIR)/libs/astroid/as_string.py $(CURDIR)/pylama_pylint/astroid/.
-	@cp -f $(CURDIR)/libs/astroid/bases.py $(CURDIR)/pylama_pylint/astroid/.
-	@cp -f $(CURDIR)/libs/astroid/builder.py $(CURDIR)/pylama_pylint/astroid/.
-	@cp -f $(CURDIR)/libs/astroid/exceptions.py $(CURDIR)/pylama_pylint/astroid/.
-	@cp -f $(CURDIR)/libs/astroid/inference.py $(CURDIR)/pylama_pylint/astroid/.
-	@cp -f $(CURDIR)/libs/astroid/inspector.py $(CURDIR)/pylama_pylint/astroid/.
-	@cp -f $(CURDIR)/libs/astroid/manager.py $(CURDIR)/pylama_pylint/astroid/.
-	@cp -f $(CURDIR)/libs/astroid/mixins.py $(CURDIR)/pylama_pylint/astroid/.
-	@cp -f $(CURDIR)/libs/astroid/modutils.py $(CURDIR)/pylama_pylint/astroid/.
-	@cp -f $(CURDIR)/libs/astroid/node_classes.py $(CURDIR)/pylama_pylint/astroid/.
-	@cp -f $(CURDIR)/libs/astroid/nodes.py $(CURDIR)/pylama_pylint/astroid/.
-	@cp -f $(CURDIR)/libs/astroid/protocols.py $(CURDIR)/pylama_pylint/astroid/.
-	@cp -f $(CURDIR)/libs/astroid/raw_building.py $(CURDIR)/pylama_pylint/astroid/.
-	@cp -f $(CURDIR)/libs/astroid/rebuilder.py $(CURDIR)/pylama_pylint/astroid/.
-	@cp -f $(CURDIR)/libs/astroid/scoped_nodes.py $(CURDIR)/pylama_pylint/astroid/.
-	@cp -f $(CURDIR)/libs/astroid/utils.py $(CURDIR)/pylama_pylint/astroid/.
-	@cp -rf $(CURDIR)/libs/astroid/brain $(CURDIR)/pylama_pylint/astroid/.
+	@cp -f $(CURDIR)/libs/astroid/astroid/__init__.py $(CURDIR)/pylama_pylint/astroid/.
+	@cp -f $(CURDIR)/libs/astroid/astroid/__pkginfo__.py $(CURDIR)/pylama_pylint/astroid/.
+	@cp -f $(CURDIR)/libs/astroid/astroid/as_string.py $(CURDIR)/pylama_pylint/astroid/.
+	@cp -f $(CURDIR)/libs/astroid/astroid/bases.py $(CURDIR)/pylama_pylint/astroid/.
+	@cp -f $(CURDIR)/libs/astroid/astroid/builder.py $(CURDIR)/pylama_pylint/astroid/.
+	@cp -f $(CURDIR)/libs/astroid/astroid/exceptions.py $(CURDIR)/pylama_pylint/astroid/.
+	@cp -f $(CURDIR)/libs/astroid/astroid/inference.py $(CURDIR)/pylama_pylint/astroid/.
+	@cp -f $(CURDIR)/libs/astroid/astroid/inspector.py $(CURDIR)/pylama_pylint/astroid/.
+	@cp -f $(CURDIR)/libs/astroid/astroid/manager.py $(CURDIR)/pylama_pylint/astroid/.
+	@cp -f $(CURDIR)/libs/astroid/astroid/mixins.py $(CURDIR)/pylama_pylint/astroid/.
+	@cp -f $(CURDIR)/libs/astroid/astroid/modutils.py $(CURDIR)/pylama_pylint/astroid/.
+	@cp -f $(CURDIR)/libs/astroid/astroid/node_classes.py $(CURDIR)/pylama_pylint/astroid/.
+	@cp -f $(CURDIR)/libs/astroid/astroid/nodes.py $(CURDIR)/pylama_pylint/astroid/.
+	@cp -f $(CURDIR)/libs/astroid/astroid/protocols.py $(CURDIR)/pylama_pylint/astroid/.
+	@cp -f $(CURDIR)/libs/astroid/astroid/raw_building.py $(CURDIR)/pylama_pylint/astroid/.
+	@cp -f $(CURDIR)/libs/astroid/astroid/rebuilder.py $(CURDIR)/pylama_pylint/astroid/.
+	@cp -f $(CURDIR)/libs/astroid/astroid/scoped_nodes.py $(CURDIR)/pylama_pylint/astroid/.
+	@cp -f $(CURDIR)/libs/astroid/astroid/utils.py $(CURDIR)/pylama_pylint/astroid/.
+	@cp -rf $(CURDIR)/libs/astroid/astroid/brain $(CURDIR)/pylama_pylint/astroid/.
 	@mkdir -p $(CURDIR)/pylama_pylint/logilab/common
 	@touch $(CURDIR)/pylama_pylint/logilab/__init__.py
 	@cp -f $(CURDIR)/libs/logilab-common/__init__.py $(CURDIR)/pylama_pylint/logilab/common/.
