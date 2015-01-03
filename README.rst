@@ -21,7 +21,7 @@ Requirements
 
 
 Installation
-=============
+============
 
 **Pylama_pylint** should be installed using pip: ::
 
@@ -52,7 +52,7 @@ Development of starter happens at github: https://github.com/klen/pylama_pylint
 
 
 Contributors
-=============
+============
 
 * klen_ (horneds@gmail.com)
 
