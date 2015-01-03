@@ -100,9 +100,13 @@ $(CURDIR)/libs/pylint:
 	@mkdir -p libs
 	@hg clone ssh://hg@bitbucket.org/logilab/pylint libs/pylint
 
+$(CURDIR)/libs/six:
+	@mkdir -p libs
+	@hg clone https://bitbucket.org/gutworth/six libs/six
+
 .PHONY: libs
-libs: $(CURDIR)/libs/astroid $(CURDIR)/libs/logilab-common $(CURDIR)/libs/pylint
-	@rm -rf $(CURDIR)/pylama_pylint/astroid $(CURDIR)/pylama_pylint/pylint $(CURDIR)/pylama_pylint/logilab
+libs: $(CURDIR)/libs/astroid $(CURDIR)/libs/logilab-common $(CURDIR)/libs/pylint $(CURDIR)/libs/six
+	@rm -rf $(CURDIR)/pylama_pylint/astroid $(CURDIR)/pylama_pylint/pylint $(CURDIR)/pylama_pylint/logilab $(CURDIR)/pylama_pylint/six
 	@mkdir -p $(CURDIR)/pylama_pylint/astroid
 	@cp -f $(CURDIR)/libs/astroid/astroid/__init__.py $(CURDIR)/pylama_pylint/astroid/.
 	@cp -f $(CURDIR)/libs/astroid/astroid/__pkginfo__.py $(CURDIR)/pylama_pylint/astroid/.
@@ -149,3 +153,4 @@ libs: $(CURDIR)/libs/astroid $(CURDIR)/libs/logilab-common $(CURDIR)/libs/pylint
 	@cp -f $(CURDIR)/libs/pylint/lint.py $(CURDIR)/pylama_pylint/pylint/.
 	@cp -rf $(CURDIR)/libs/pylint/reporters $(CURDIR)/pylama_pylint/pylint/.
 	@cp -f $(CURDIR)/libs/pylint/utils.py $(CURDIR)/pylama_pylint/pylint/.
+	@cp -f $(CURDIR)/libs/six/six.py $(CURDIR)/pylama_pylint/.
