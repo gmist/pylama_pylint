@@ -17,7 +17,7 @@ pylama_pylint -- Support Pylint_ in Pylama_.
 Requirements
 =============
 
-- python >= 2.6
+- python >= 2.7
 
 
 Installation
