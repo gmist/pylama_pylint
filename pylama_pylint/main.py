@@ -55,12 +55,8 @@ class Linter(BaseLinter):
         params = _Params(ignore=ignore, select=select, params=params)
         logger.debug(params)
 
-        params = params.to_attrs()
-        if sys.version_info >= (3, 0, 0):
-            params.append("--py3k")
-
         runner = Run(
-            [path] + params, reporter=Reporter(), exit=False)
+            [path] + params.to_attrs(), reporter=Reporter(), exit=False)
 
         return runner.linter.reporter.errors
 
