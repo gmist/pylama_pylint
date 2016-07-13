@@ -1,4 +1,6 @@
 *.egg-info
+/.coverage
+/.tox
 /.eggs
 /.env
 /.ropeproject
@@ -7,3 +9,4 @@
 /libs
 /todo.txt
 __pycache__
+/.cache
